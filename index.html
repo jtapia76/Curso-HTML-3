@@ -16,33 +16,25 @@
                 <img src="img/logo.png" alt="">  
             </div>
             <div id="container-header-nav">
-                <nav class="navbar navbar-expand-md navbar-light">
-                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                    <div class="container-fluid">
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse " id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
-                          </li>
+                
+                    <!-- <a class="active" style="color: aliceblue; border-radius:30px;" href="#">Home</a>
+                    <a href="#">About US</a>
+                    <a href="#">Services</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact US</a> -->
+                    
+                        <ul>
+                            <li id="nav1"><a href="#">Home</a></li>
+                            <li id="nav2"><a href="#">About Us</a></li>
+                            <li id="nav3"><a href="#">Services</a></li>
+                            <li id="nav4"><a href="#">Blog</a></li>
+                            <li id="nav5"><a href="#">Contact Us</a></li>
                         </ul>
-                      </div>
-                    </div>
-                  </nav>   
+                        <div class="borrar"></div>
+                    
+                    
+
+                
             </div>
             <div id="container-header-title">
                 <h1>We Build Well Designed Websites</h1>   
@@ -98,7 +90,7 @@
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="#">Our Portfolio</a>
               </div>
-            </div>
+            </div> 
             <div class="container-body-port-card" style="width: 18rem;">
               <div class="card-body">
                 <div class="card-body-content">  
@@ -130,48 +122,57 @@
       </div>
       <!-- Portfolio Parte II-->
       <div class="container-body-port-II">
-        <div class="container-body-port-II-card" style="width: 18rem;">
-            <div class="card mb-3">
-                    <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="img/cube.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
+          <div class="container-body-port-II-card">
+                      <div id="img-pos">
+                          <img src="img/cube.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div id="container-body-port-II-det">
+                          <h5>Testimonials</h5>
+                          <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+          </div>
+        
+           <div class="container-body-port-II-detail-II">
+              
+                  <h5>Our Lastest Blog Post</h5>
+                   <div class="container-class-detail">
+                    <p >Some quick example text to build on the card title. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                  </div>
+                  <div class="container-class-detail">
+                    <p>Some quick example text to build on the card title. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                  </div>
+                  <div class="container-class-detail">
+                    <p>Some quick example text to build on the card title. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                  </div>
+          </div>
+          <div class="container-body-port-II-detail-II">
+              
+                <h5>Our Lastest Blog Post</h5>
+               <div class="container-class-detail">
+                  <div><img src="img/cube.png" alt=""></div>
+                  <p id="container-txt">Some quick example text to build on the card title. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </div>
-              </div>
-        </div>
-        <div class="container-body-port-II-card" style="width: 18rem;">
-          <div class="card-body">
-            <div class="card-body-content">  
-                <img class="card-img-top" src="img/cube.png" alt="Card image cap">
-                <a href="#">Read More</a>
-            </div>
+                <div class="container-class-detail">
+                  <div><img src="img/cube.png" alt=""></div>
+                  <p id="container-txt">Some quick example text to build on the card title. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div class="container-class-detail">
+                  <div><img src="img/cube.png" alt=""></div>
+                  <p id="container-txt">Some quick example text to build on the card title. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                
           </div>
-        </div>
-        <div class="container-body-port-II-card" style="width: 18rem;">
-          <div class="card-body">
-            <div class="card-body-content">  
-                <img class="card-img-top" src="img/cube.png" alt="Card image cap">
-                <a href="#">Read More</a>
-            </div>
-          </div>
-        </div>
-        <div class="container-body-port-II-card" style="width: 18rem;">
-          <div class="card-body">
-            <div class="card-body-content">  
-                <img class="card-img-top" src="img/cube.png" alt="Card image cap">
-                <a href="#">Read More</a>
-            </div>
-          </div>
-        </div>
-        </div>
-      <footer>
+        
+      </div>
+      <!-- <footer>
           <a href="">Hola</a>
+      </footer> -->
+      <footer class="container-footer">
+            <a href="#">Home</a>
+            <a href="#">About US</a>
+            <a href="#">Services</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact US</a>
       </footer>
       
       <script src="js/bootstrap.js"></script>

@@ -9,7 +9,7 @@
 
 #container-header-img{
     float: left;
-    max-width: 50%;
+    max-width: 30%;
     height: 35%;
 }
 #container-header-img img{
@@ -24,14 +24,25 @@
     object-fit: cover;
 }
 
-#container-header-nav{
-    
-    /* background-color: blue;
-    background-size: cover; */
-    align-items:flex-end;
-    width: 30%;
+#container-header-nav { width: 70%; padding: 0.5em;}
 
+#container-header-nav ul { margin: auto; list-style-type: none; }
+
+#container-header-nav li { margin: 0.1em 0.2em; padding: 0.1em 1em 0.5em 1em; 
+    background-color: #9933cc; width: 25%;float: left;
+    list-style-type: none; }
+#container-header-nav li:hover { background-color: #990033; }
+
+#container-header-nav li a:link, #container-header-nav li a:visited { 
+    color: #feffe4; font-style: oblique; text-decoration: none;  }
+
+#container-header-nav li a:hover, #container-header-nav li a:active { 
+    color:#ffd7a9 ; font-style: oblique; text-decoration: none; }
+#container-header-nav li {
+    font-size:1vw;
 }
+
+.borrar { clear: both; }	
 
 #container-header-title{
     clear: both;
@@ -91,6 +102,9 @@
 .card-body-content{
     height: 10rem;
 }
+.container-footer{
+    text-align: right;
+}
 /* Portfolio */
 .container-body-port {
     display: flex;
@@ -119,18 +133,38 @@
 
 .container-body-port-II{
     max-width: 100%;
-    height: 11rem;
-    background-color: mediumpurple;
+    height: 13rem;
+    background-color: red;
 }
 
 /* @media screen and (max-width:360px){  */
 @media (min-width: 320px) and (max-width: 479px) {
-   .container-body{
+    
+    #container-header-nav { float:right;width: 70%; padding: 0.2em;}
+
+    #container-header-nav ul { margin: auto; list-style-type: none; }
+
+    #container-header-nav li { margin: 0 0; 
+        background-color: #9933cc; width: 25%;float: left;
+        list-style-type: none; border-radius: 30px; }
+    #container-header-nav li:hover { background-color: #990033;border-radius: 30px; }
+
+    #container-header-nav li a:link, #container-header-nav li a:visited { 
+        color: #feffe4; font-style: oblique; text-decoration: none;  }
+
+    #container-header-nav li a:hover, #container-header-nav li a:active { 
+        color:#ffd7a9 ; font-style: oblique; text-decoration: none; }
+    #container-header-nav li {
+        font-size: calc(0.35em + 0.35vw);
+    }
+
+    .borrar { clear: both; }
+    .container-body{
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
         background-color:lightblue;
-        /* height: 100%; */
+        height: 60%;
         max-width: 100%;
         
     }
@@ -164,15 +198,106 @@
         font-size: calc(0.5em + 0.5vw);
         vertical-align: baseline;
     }
+    /* Seteo Obj Cuerpo II*/
+    .container-body-port-II{
+       
+        margin:0;
+        max-width: 100%;
+        height: 26rem;
+        background-color: mediumpurple;
+    }
+    .container-body-port-II-card{
+        
+        background-color: lavenderblush;
+        max-width: 100%;
+        height: 33.1%;
+        text-align: left;
+        font-size: calc(0.5em + 0.5vw);
+        margin-left:0.1rem;
+        margin-top:0.1rem;
+        margin-bottom:0.1rem;
+        margin-right: 0.1rem;
+    }
+    
+    #container-body-port-II-det{
+        margin-left: 1rem;
+        width: 93%;
+    }
+    
+    
+    #img-pos {
+        display: flex;
+        width: 6rem;
+        height: 3rem;
+        object-fit: cover;
+    }
+    /*-------------------------------*/
+    /* Seteo Segundo Obj Cuerpo II */
+    .container-body-port-II-detail-II {
+    
+        background-color: lavenderblush;
+        max-width: 100%;
+        height: 33.1%;
+        text-align: left;
+        font-size: calc(0.5em + 0.5vw);
+        margin-left:0.1rem;
+        margin-top:0.1rem;
+        margin-bottom:0.1rem;
+        margin-right: 0.1rem;
+    }
+    .container-body-port-II-detail-II h5 {
+        margin-left: 0.2rem;
+    }
+    
+    .container-class-detail{
+        
+        margin-left:0.2rem;
+        margin-right:0.2rem;
+        /* padding:0.1rem; */
+        /* width: 80%; */
+        height: 25%;
+        border-bottom:lightslategray 2px solid;
+        text-align: left;
+       
+        font-size: calc(0.7em + 0.7vw);
+    }
+    #container-txt{
+        margin-left: 3rem;
+    }
+    .container-class-detail img{
+        float: left;
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+       
+    }
+    
+
   }
 
   /* @media screen and (max-width:480px){ */
-  @media (min-width: 480px) and (max-width: 767px) {
+  @media (min-width: 480px) and (max-width: 768px) {
     
-    /* .navbar-toggler{
-        display: block;
-        float: right;
-    } */
+    #container-header-nav { float:right;width: 70%;padding: 0.2em;}
+
+    #container-header-nav ul { margin: auto; list-style-type: none; }
+
+    #container-header-nav li { margin: 0.1em 0.2em; padding: 0.1em 1em 0.5em 1em; 
+        background-color: #9933cc; width: 18%;float: left;
+        list-style-type: none; border-radius: 30px;}
+    #container-header-nav li:hover { background-color: #990033; border-radius: 30px;}
+
+    #container-header-nav li a:link, #container-header-nav li a:visited { 
+        color: #feffe4; font-style: oblique; text-decoration: none;  }
+
+    #container-header-nav li a:hover, #container-header-nav li a:active { 
+        color:#ffd7a9 ; font-style: oblique; text-decoration: none; }
+    #container-header-nav li {
+        font-size: calc(0.35em + 0.35vw);
+        text-align: center;
+    }
+
+    .borrar { clear: both; }
 
     
     .container-body{
@@ -213,83 +338,102 @@
         font-size: calc(0.5em + 0.5vw);
         vertical-align: baseline;
     }
-  }
-
-  @media screen and (max-width:768px){
-
-    #container-header-nav{
-        float: right;
-        width: 50%;
-        height:2.6rem;
-    }
-    .container-body{
-         display: flex;
-         flex-wrap: wrap;
-         margin: 0 auto;
-         background-color:lightslategray;
-         height: 45%;
-         max-width: 100%;
-         
-     }
-     .container-body-card{
-         position: relative;
-         max-width: 100%;
-         padding: 0;
-         float: left;
-         align-items: center;
-         text-align: center;
-         font-size: calc(0.5em + 0.5vw);
-         vertical-align: baseline;
-     }
-     .container-body-port {
-         display: flex;
-         flex-wrap: wrap;
-         margin: 0 auto;
-         background-color:linen;
-         height: 45%;
-         max-width: 100%;
-         
-     }
-     .container-body-port-card{
-         position: relative;
-         max-width: 100%;
-         padding: 0;
-         float: left;
-         align-items: center;
-         text-align: center;
-         font-size: calc(0.5em + 0.5vw);
-         vertical-align: baseline;
-     }
-     .container-body-port-II {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 auto;
-        background-color:mediumpurple;
-        height: 45%;
+    /* Seteo Obj Cuerpo II*/
+    .container-body-port-II{
+       
+        margin:0;
         max-width: 100%;
-        
+        height: 26rem;
+        background-color: mediumpurple;
     }
     .container-body-port-II-card{
-        position: relative;
+        
+        background-color: lavenderblush;
         max-width: 100%;
-        padding: 0;
-        float: left;
-        align-items: center;
-        text-align: center;
+        height: 33.1%;
+        text-align: left;
         font-size: calc(0.5em + 0.5vw);
-        vertical-align: baseline;
+        margin-left:0.1rem;
+        margin-top:0.1rem;
+        margin-bottom:0.1rem;
+        margin-right: 0.1rem;
     }
-   }
- 
-  @media screen and (min-width:769px){
-    #container-header-nav{
+    
+    #container-body-port-II-det{
+        margin-left: 1rem;
+        width: 93%;
+    }
+    
+    
+    #img-pos {
         display: flex;
-        float: right;
-        /* align-items: center; */
-        width: 40%;
-        height:5rem;
+        width: 6rem;
+        height: 3rem;
+        object-fit: cover;
+    }
+        /*-------------------------------*/
+    /* Seteo Segundo Obj Cuerpo II */
+    .container-body-port-II-detail-II {
+    
+        background-color: lavenderblush;
+        max-width: 100%;
+        height: 33.1%;
+        text-align: left;
+        font-size: calc(0.5em + 0.5vw);
+        margin-left:0.1rem;
+        margin-top:0.1rem;
+        margin-bottom:0.1rem;
+        margin-right: 0.1rem;
+    }
+    .container-body-port-II-detail-II h5 {
+        margin-left: 0.2rem;
+    }
+    
+    .container-class-detail{
+        
+        margin-left:0.2rem;
+        margin-right:0.2rem;
+        /* padding:0.1rem; */
+        /* width: 80%; */
+        height: 25%;
+        border-bottom:lightslategray 2px solid;
+        text-align: left;
+       
+        font-size: calc(0.7em + 0.7vw);
+    }
+    #container-txt{
+        margin-left: 3rem;
+    }
+    .container-class-detail img{
+        float: left;
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+       
+    }
+    
+  }
+
+  @media screen and (min-width:769px){
+    #container-header-nav { float:right;width: 65%; padding: 0.2em;}
+
+    #container-header-nav ul { margin: auto; list-style-type: none; }
+
+    #container-header-nav li { margin: 0.1em 0.2em; padding: 0.1em 1em 0.5em 1em; 
+        background-color: #9933cc; width: 18%;float: left;
+        list-style-type: none;border-radius: 20px; }
+    #container-header-nav li:hover { background-color: #990033;border-radius: 20px;}
+
+    #container-header-nav li a:link, #container-header-nav li a:visited { 
+        color: #feffe4; font-style: oblique; text-decoration: none;  }
+
+    #container-header-nav li a:hover, #container-header-nav li a:active { 
+        color:#ffd7a9 ; font-style: oblique; text-decoration: none; }
+    #container-header-nav li {
         font-size: calc(0.5em + 0.5vw);
     }
+
+    .borrar { clear: both; }
 
    .container-body{
         display: flex;
@@ -307,13 +451,12 @@
             padding: 0;
             float: left;
             align-items: center;
-            text-align: center;
+            text-align: left;
             font-size: calc(0.5em + 0.5vw);
             vertical-align: baseline;
     }
     .container-body-port {
         display: flex;
-        /* margin: 0 auto; */
         justify-content: center;
         background-color:linen;
         max-width: 100%;
@@ -325,29 +468,80 @@
         padding: 0;
         float: left;
         align-items: center;
-        text-align: center;
+        text-align: left;
         font-size: calc(0.5em + 0.5vw);
         vertical-align: baseline;
     }
-
+    /* Seteo Obj Cuerpo II */
     .container-body-port-II{
         display: flex;
-        /* margin: 0 auto; */
-        justify-content: center;
+        margin:0;
         max-width: 100%;
-        height: 11rem;
+        height: 13rem;
         background-color: mediumpurple;
     }
-
     .container-body-port-II-card{
-        position: relative;
-        max-width: 25%;
-        padding: 0;
+        display: flex;
+        background-color: lavenderblush;
+        width: 33.1%;
+        height: 98%;
         float: left;
-        align-items: center;
-        text-align: center;
+        text-align: left;
         font-size: calc(0.5em + 0.5vw);
-        vertical-align: baseline;
+        margin-left:0.5rem;
+        margin-top:0.1rem;
+        margin-bottom:0.5rem;
     }
+    
+    #container-body-port-II-det{
+        margin-left: 1rem;
+        width: 50%;
+    }
+    #img-pos {
+        display: flex;
+        width: 6rem;
+        height: 3rem;
+        object-fit: cover;
+    }
+    
+    .container-body-port-II-detail-II {
+        
+        background-color: lavenderblush;
+        max-width: 33.1%;
+        height: 98%;
+        text-align: left;
+        font-size: calc(0.5em + 0.5vw);
+        margin-left:0.1rem;
+        margin-top:0.1rem;
+        margin-bottom:0.1rem;
+        margin-right: 0.1rem;
+    }
+    .container-body-port-II-detail-II h5 {
+        margin-left: 0.2rem;
+    }
+
+    .container-class-detail{
+        display: flex;
+        float: left;
+        margin-left:0.2rem;
+        margin-right:0.2rem;
+        height: 27.5%;
+        border-bottom:lightslategray 2px solid;
+        text-align: left;
+       
+        font-size: calc(0.5em + 0.5vw);
+    }
+    #container-txt{
+        margin-left: 0.5rem;
+    }
+    .container-class-detail img{
+        float: left;
+        
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+       
+    }
+
 
   }
